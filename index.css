@@ -1,0 +1,209 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    
+  }
+
+  body {
+    background-color: #EDBCDF;
+  }
+
+  header {
+    background-color: #FF65F0;
+    box-shadow: 0px 3px 10px #464646;
+  }
+  
+  button .icon {
+    height: 5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+
+  strong {
+    color: #0C521F;
+  }
+ 
+  .footer-box{
+    background-color: #FF65F0;
+    box-shadow: 0px 3px 10px #464646;
+  }
+  .box-content {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2em;
+  }
+
+  .box-content h1 {
+    color: grey
+  }
+
+  .starbucks-image {
+    height: 40em;
+
+    margin-top: 2em;
+    margin-right: 10em;
+  }
+
+  .text h1 {
+    margin-top: 2em;
+    font-size: 3em;
+  }
+
+  .text p {
+    color: #0C521F;
+    margin-top: 2em;
+    font-size: 20px;
+  }
+
+  .button-text {
+    box-shadow: 0px 0px 5px #01CB39, 0 0 25px #01CB39;
+    height: 4em;
+    width: 12em;
+    border-radius: 2em;
+    background-color: #01CB39;
+    color: white;
+    cursor: pointer;
+    border: hidden;
+    margin-top: 2em;
+  }
+
+  .button-text:hover {
+    box-shadow: 0px 0px 5px #01CB39, 0 0 25px #01CB39,
+      0 0 50px #01CB39, 0 0 100px #01CB39, 0 0 200px #01CB39;
+  }
+
+  .text {
+    margin-top: 3em;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .logo-starbucks {
+    height: 10vh;
+  }
+
+  .nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+    /* ajuda na responsividade */
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo h1 {
+    color: white;
+
+  }
+
+  .nav-list {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+ 
+  .nav-item {
+    margin: 0 15px;
+  }
+
+  .nav-link {
+
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: grey;
+    font-weight: 400;
+  }
+
+  .mobile-menu-icon {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: none;
+  }
+
+  /* configurações nav bar responsivo */
+  @media screen and (max-width: 730px) {
+  .nav-bar {
+    padding: 1.5rem 4rem;
+  }
+
+  .nav-item {
+    display: none;
+    /* pra n aparecer a nav qnd a tela atingir esse tamanho */
+  }
+
+  .login-button {
+    display: none;
+    /* nao aparecerá o button qnd o nav atingir esse tamanho */
+  }
+
+  .mobile-menu-icon {
+    display: block;
+  }
+
+  .mobile-menu-icon button {
+    background-color: transparent;
+    /* deixa o png transparent */
+    border: none;
+    cursor: pointer;
+  }
+
+  .mobile-menu ul {
+    /* lista menu */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .mobile-menu .nav-item {
+    /* lista menu responsivo */
+    display: block;
+    padding-top: 1.2rem;
+  }
+
+  .mobile-menu .login-button {
+    display: block;
+    padding: 1rem 2rem;
+  }
+
+  .mobile-menu .login-button button {
+    width: 100%;
+  }
+
+  .open {
+    display: block;
+    /* qnd essa classe for acionada o menu irá aparecer */
+  }
+}
+
+/*configurações main responsivo */
+
+@media(max-width: 1050px) {
+  .box-content {
+    flex-direction: column;
+    margin-right: 1.1em;
+  }
+  .starbucks-image {
+    margin: auto;
+    width: 25em;
+    }
+}
+@media(min-width: 1600px){
+  .box-content {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2em;
+    text-align: center;
+  }
+}
